@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.menu{
+    width: 30px;
+    cursor: pointer;
+    margin: 20px, 0;
+    margin-right: 40 px;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col1 h2{
+    font-size: 54px;
+}
+.col1 h3.detail{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.name{
+    font-size: 30px;
+    color:#8312df;
+    font-weight: 100;
+    font-style: oblique;
+    margin: 20px 0 10px;
+}
+.col1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+.col1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display:block;
+}
+button:hover{
+    width:160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient( #ff469f, #ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col2{
+    flex-basis: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.col2 .controller{
+    width: 100%;
+}
+.color-box{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: linear-gradient( #ff54a2, #ff575a);
+    height: 100%;
+    width: 79%;
+    z-index:-1;
+    transform: translateX(150px);
+}
+.smedia img{
+    height: 19px;
+    margin: 20px;
+    cursor: pointer;
+}
+.smedia{
+    text-align: center;
+}
+.cart{
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+}
